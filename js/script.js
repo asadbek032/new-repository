@@ -1,13 +1,22 @@
 "Use strict"
 
-// const plase = confirm("Aru you here");
+const numberOfseries = prompt("Nechata  serial ko'rgansiz?", "");
 
+seriasDB = {
+    count: numberOfseries,
+    series: {},
+    actors:{},
+    genres:[],
+    private: false,
+}
 
-// const currentPlaxse = prompt("Where are you?", "Asad");
+const a = prompt("Oxirgi ko'rgan serialingiz?"),
+  b = prompt("Necha baxo berasiz?"),
+  c = prompt("Oxirgi ko'rgan serialingiz?"),
+  d = prompt("Necha baxo berasiz?");
 
-const client = prompt("hello")
-console.log(client);
+  seriasDB.series[a]= b;
+  seriasDB.series[c]= d;
 
-// const channel = prompt("what is your favourite youtuber"); 
+console.log(seriasDB);
 
-// console.log("https://youtube.com" + channel + "/videos");

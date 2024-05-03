@@ -10,13 +10,20 @@ seriasDB = {
     private: false,
 }
 
-const a = prompt("Oxirgi ko'rgan serialingiz?"),
-  b = prompt("Necha baxo berasiz?"),
-  c = prompt("Oxirgi ko'rgan serialingiz?"),
-  d = prompt("Necha baxo berasiz?");
-
-  seriasDB.series[a]= b;
-  seriasDB.series[c]= d;
+  for(let i = 0; i < 2; i++) {
+    const a = prompt("Oxirgi ko'rgan serialingiz?"),
+  b = prompt("Necha baxo berasiz?");
+       
+  if (a != null && b != null && a != "" && b != "") {
+    seriasDB.series[a]= b;
+    console.log("Done");
+  } else {
+    console.log("error");  
+  }
+   
+  i--;
+           
+  }
 
 console.log(seriasDB);
 
